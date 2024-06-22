@@ -1,7 +1,7 @@
 # Welcome Welcome!
 Greetings Keksis! This is the first of all repositories that i ever created!
 
-This repo contains **all work** of the minecraft plugin development, that i ever made!
+This repo contains **all work** of the minecraft plugin development that i ever made!
 
 ## Plugin: TheChosenOne
 TheChosenOne is a plugin that provides more security to your server. It observers permissions, manages bans and mutes and even more!
