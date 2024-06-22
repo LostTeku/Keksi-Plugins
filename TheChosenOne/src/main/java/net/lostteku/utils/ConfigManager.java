@@ -1,6 +1,7 @@
 package net.lostteku.utils;
 
 import net.lostteku.TheChosenOne;
+import net.lostteku.enums.DefaultConf;
 import net.lostteku.enums.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -21,6 +22,10 @@ public class ConfigManager {
         }
 
         setDefaultsToConfig(createNewFile("config"), "general.blockedcommands", Arrays.asList(new String[]{"/pl", "/plugins", "/version", "/ver"}));
+
+        for(DefaultConf confs : DefaultConf.values()){
+            setDefaultsToConfig(createNewFile("config"), confs.getPath(), confs.getValue());
+        }
 
         for(Messages msgs : Messages.values()){
             setDefaultsToConfig(createNewFile("messages"), msgs.getPath(), msgs.getStandardMessage());
