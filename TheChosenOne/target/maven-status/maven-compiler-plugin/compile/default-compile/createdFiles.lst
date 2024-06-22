@@ -1,0 +1,9 @@
+net\lostteku\commands\HealCommand.class
+net\lostteku\commands\FeedCommand.class
+net\lostteku\events\PlayerCommandListener.class
+net\lostteku\TheChosenOne.class
+net\lostteku\enums\DefaultConf.class
+net\lostteku\enums\Messages.class
+net\lostteku\commands\ConfigCommand.class
+net\lostteku\events\PlayerChatListener.class
+net\lostteku\utils\ConfigManager.class
