@@ -1,4 +1,4 @@
-package net.lostteku.utils;
+package net.lostteku.manager;
 
 import net.lostteku.TheChosenOne;
 import net.lostteku.enums.DefaultConf;

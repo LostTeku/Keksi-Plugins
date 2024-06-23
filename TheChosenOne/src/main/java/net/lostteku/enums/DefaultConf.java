@@ -1,6 +1,6 @@
 package net.lostteku.enums;
 
-import net.lostteku.utils.ConfigManager;
+import net.lostteku.manager.ConfigManager;
 
 public enum DefaultConf {
 

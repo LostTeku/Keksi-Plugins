@@ -1,7 +1,6 @@
 package net.lostteku.enums;
 
-import net.lostteku.utils.ConfigManager;
-import org.bukkit.Bukkit;
+import net.lostteku.manager.ConfigManager;
 import org.bukkit.ChatColor;
 
 public enum Messages {

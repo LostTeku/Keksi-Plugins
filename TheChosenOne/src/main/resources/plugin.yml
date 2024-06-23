@@ -9,3 +9,6 @@ commands:
   feed:
     permission: op
     usage: '/feed <optional: spielername>'
+  ban:
+    permission: op
+    usage: '/ban <username, grund, dauer'

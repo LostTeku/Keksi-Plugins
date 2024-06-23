@@ -1,7 +1,7 @@
 package net.lostteku.events;
 
 import net.lostteku.enums.Messages;
-import net.lostteku.utils.ConfigManager;
+import net.lostteku.manager.ConfigManager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
