@@ -14,7 +14,6 @@ public class MySQLManager {
 
     public void connect(){
         if(DefaultConf.getCustomValue(DefaultConf.MYSQL_ENABLED) == "false") return;
-        Bukkit.getConsoleSender().sendMessage("§cMySQL ist aktiviert! Versuche mich zu verbinden...");
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -28,7 +27,6 @@ public class MySQLManager {
             e.printStackTrace();
             Bukkit.getConsoleSender().sendMessage("§cMySQL-Verbindung konnte nicht hergestellt werden!");
         }
-        if(connection != null) Bukkit.getConsoleSender().sendMessage("§aErfolgreich verbunden!");
     }
 
     public void createTable(String sql) {

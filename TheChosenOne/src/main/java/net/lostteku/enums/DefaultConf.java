@@ -1,6 +1,7 @@
 package net.lostteku.enums;
 
 import net.lostteku.manager.ConfigManager;
+import org.bukkit.ChatColor;
 
 public enum DefaultConf {
 
@@ -9,8 +10,9 @@ public enum DefaultConf {
     MYSQL_PASSWORD("general.mysql.password", "useasecurepasswordhere"),
     MYSQL_DATABASE_NAME("general.mysql.database", "databasename"),
     MYSQL_HOST("general.mysql.host", "localhost"),
-    MYSQL_PORT("general.mysql.port", "3306");
-
+    MYSQL_PORT("general.mysql.port", "3306"),
+    KICK_BAN_SCREEN("general.banmanagement.kickbanscreen", "&cDu wurdest permanent gebannt! #Auf nimmer wiedersehen!"),
+    BAN_SCREEN("general.banmanagement.banscreen", "&cDu bist gebannt!");
     private String path;
     private String value;
     private static ConfigManager manager = new ConfigManager();
@@ -29,6 +31,6 @@ public enum DefaultConf {
     }
 
     public static String getCustomValue(DefaultConf conf){
-        return manager.getConfigFile("config").getString(conf.getPath());
+        return ChatColor.translateAlternateColorCodes('&', manager.getConfigFile("config").getString(conf.getPath()).replace('#', '\n'));
     }
 }

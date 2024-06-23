@@ -12,9 +12,12 @@ public enum Messages {
     BLOCKED_COMMAND("blockedCommandMessage", "&aDu hast dich erfolgreich geheilt!"),
     NO_PLAYER("noPlayerFound", "&cSpieler nicht gefunden!"),
     OFFLINE_PLAYER("offlinePlayerMessage", "&cDer gesuchte Spieler ist offline!"),
+    NOT_BANNED("playerNotBannedMessage", "&cSpieler ist nicht gebannt!"),
     ACTION_SUCESS("actionSuccess", "&aAktion erfolgreich ausgeführt!"),
     HEAL("healMessage", "&aDu hast dich erfolgreich geheilt!"),
     FOOD("foodMessage", "&aDu hast dich erfolgreich gefüttert!");
+
+
 
     private String path;
     private String msg;

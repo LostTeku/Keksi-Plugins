@@ -12,3 +12,6 @@ commands:
   ban:
     permission: op
     usage: '/ban <username, grund, dauer'
+  unban:
+    permission: op
+    usage: '/unban <username>'
