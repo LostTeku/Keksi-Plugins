@@ -15,8 +15,8 @@ public enum Messages {
     NOT_BANNED("playerNotBannedMessage", "&cSpieler ist nicht gebannt!"),
     ACTION_SUCESS("actionSuccess", "&aAktion erfolgreich ausgeführt!"),
     HEAL("healMessage", "&aDu hast dich erfolgreich geheilt!"),
-    FOOD("foodMessage", "&aDu hast dich erfolgreich gefüttert!");
-
+    FOOD("foodMessage", "&aDu hast dich erfolgreich gefüttert!"),
+    PERMISSION_UPDATED("updatedPermissionMessage", "&aDu hast die Permissions aktualisiert!");
 
 
     private String path;

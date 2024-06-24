@@ -5,29 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c119eea8-1a78-41ad-b97e-b1d6e5e44de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/commands/UnbanCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerDeathListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerJoinListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerLoginListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerQuitListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/LoggingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/commands/PermissionCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/CPermissionCheckListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/permissions/PermissionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/permissions/PermissionPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/permissions/cevents/PermissionCheckEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/TheChosenOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/TheChosenOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/commands/BanCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/commands/BanCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/enums/DefaultConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/enums/DefaultConf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/enums/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/enums/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/BanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/BanManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/MySQLManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/MySQLManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerDeathListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/events/PlayerJoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/java/net/lostteku/manager/ConfigManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/target/TheChosenOne-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/TheChosenOne-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/TheChosenOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/TheChosenOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/enums/DefaultConf.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/enums/DefaultConf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/enums/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/enums/Messages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/events/PlayerCommandListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/events/PlayerCommandListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/utils/ConfigManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/utils/MySQLManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/events/PlayerDeathListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/events/PlayerJoinListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/events/PlayerJoinListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/manager/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/classes/net/lostteku/manager/ConfigManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TheChosenOne/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TheChosenOne/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -59,17 +55,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.TheChosenOne [package].executor": "Run",
-    "Maven.TheChosenOne [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/Workspace/Minecraft/Spigot/pom.xml",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.TheChosenOne [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TheChosenOne [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/Workspace/Minecraft/Spigot/pom.xml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

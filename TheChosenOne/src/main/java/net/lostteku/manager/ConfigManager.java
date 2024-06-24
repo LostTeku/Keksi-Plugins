@@ -23,11 +23,14 @@ public class ConfigManager {
 
         setDefaultsToConfig(createNewFile("config"), "general.blockedcommands", Arrays.asList(new String[]{"/pl", "/plugins", "/version", "/ver"}));
 
-        for(DefaultConf confs : DefaultConf.values()){
+        createNewFile("rank-permissions");
+        createNewFile("user-permissions");
+
+        for (DefaultConf confs : DefaultConf.values()) {
             setDefaultsToConfig(createNewFile("config"), confs.getPath(), confs.getValue());
         }
 
-        for(Messages msgs : Messages.values()){
+        for (Messages msgs : Messages.values()) {
             setDefaultsToConfig(createNewFile("messages"), msgs.getPath(), msgs.getStandardMessage());
         }
 
@@ -40,7 +43,7 @@ public class ConfigManager {
 
     private File createNewFile(String name) {
         File newfile = new File(TheChosenOne.getChosenOne().getDataFolder() + "\\" + name + ".yml");
-        if(newfile.exists()) return newfile;
+        if (newfile.exists()) return newfile;
         try {
             newfile.createNewFile();
         } catch (IOException e) {
@@ -62,7 +65,7 @@ public class ConfigManager {
     private void setDefaultsToConfig(File newfile, String path, Object value) {
 
         YamlConfiguration conf = YamlConfiguration.loadConfiguration(newfile);
-        if(conf.get(path) != null) return;
+        if (conf.get(path) != null) return;
 
         conf.set(path, value);
         try {
@@ -73,20 +76,18 @@ public class ConfigManager {
     }
 
     public void setConfigurationToFile(String name, String configpath, Object value) {
-        for (File files : fileList) {
-            if (files.getName().equals(name + ".yml")) {
-                YamlConfiguration cnf = YamlConfiguration.loadConfiguration(files);
-                if (cnf.get(configpath) == null) {
-                    Bukkit.getConsoleSender().sendMessage("§cBitte starte den Server nochmal neu, damit ich die fehlenden Configdateien erstellen kann!");
-                    return;
-                }
-                cnf.set(configpath, value);
-                try {
-                    cnf.save(files);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+
+        if(getConfigFile(name) == null) {
+            Bukkit.getConsoleSender().sendMessage("§cBitte starte den Server nochmal neu, damit ich die fehlenden Configdateien erstellen kann!");
+            return;
+        }
+        YamlConfiguration cnf = getConfigFile(name);
+
+        cnf.set(configpath, value);
+        try {
+            cnf.save(new File(TheChosenOne.getChosenOne().getDataFolder() + "\\" + name + ".yml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }

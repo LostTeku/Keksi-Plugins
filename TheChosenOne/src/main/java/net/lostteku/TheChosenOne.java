@@ -1,14 +1,13 @@
 package net.lostteku;
 
-import net.lostteku.commands.BanCommand;
-import net.lostteku.commands.FeedCommand;
-import net.lostteku.commands.HealCommand;
-import net.lostteku.commands.UnbanCommand;
+import net.lostteku.commands.*;
 import net.lostteku.events.*;
 import net.lostteku.manager.BanManager;
 import net.lostteku.manager.ConfigManager;
 import net.lostteku.manager.LoggingManager;
 import net.lostteku.manager.MySQLManager;
+import net.lostteku.permissions.PermissionPlayer;
+import net.lostteku.permissions.cevents.PermissionCheckEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,11 +40,13 @@ public class TheChosenOne extends JavaPlugin {
         pm.registerEvents(new PlayerLoginListener(), this);
         pm.registerEvents(new PlayerQuitListener(), this);
         pm.registerEvents(new PlayerJoinListener(), this);
+        pm.registerEvents(new CPermissionCheckListener(), this);
 
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("feed").setExecutor(new FeedCommand());
         getCommand("ban").setExecutor(new BanCommand());
         getCommand("unban").setExecutor(new UnbanCommand());
+        getCommand("permission").setExecutor(new PermissionCommand());
 
         Bukkit.getConsoleSender().sendMessage("§aTheChosenOne has loaded!");
 
